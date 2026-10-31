@@ -5,12 +5,12 @@
 # IgniteRE Help Center & Chat Support
 ### A UX case study: bringing support *inside* a real estate management platform
 
-![Role](https://img.shields.io/badge/Role-UX%2FUI%20Design-6C47FF?style=flat-square)
+![Role](https://img.shields.io/badge/Role-Sr%20UX%20Designer-6C47FF?style=flat-square)
 ![Tool](https://img.shields.io/badge/Tool-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 ![Domain](https://img.shields.io/badge/Domain-Real%20Estate%20SaaS-1E4E8C?style=flat-square)
 ![Focus](https://img.shields.io/badge/Focus-Self--Service%20%2B%20Chat%20Support-00A3A3?style=flat-square)
 
-**Ravi Myneni** · Senior UX Designer · Hyderabad, India
+**Ravi Myneni** · Sr UX Designer · Hyderabad, India
 
 ### 🌐 [View the case study website →](https://ravimyneni.github.io/ignitere-help-center-case-study/)
 
@@ -53,7 +53,7 @@
 
 **IgniteRE** is a dynamic real estate management platform used by **real estate agents and property managers** to streamline their daily tasks. As the platform grew in complexity and features, users began to experience friction when they needed support. They often struggled to find timely assistance, which led to frustration and lower satisfaction.
 
-To address these pain points, we designed and integrated a **Help Center and Chat Support directly inside the IgniteRE application**, improving the overall user experience.
+To address these pain points, I designed a **Help Center and Chat Support directly inside the IgniteRE application**, improving the overall user experience.
 
 <p align="center">
   <img src="01-hero-mockup.jpg" alt="Hi-fi mockup: the Help panel open beside the IgniteRE dashboard, with search, suggested articles and four support entry points" width="90%"/>
@@ -62,7 +62,7 @@ To address these pain points, we designed and integrated a **Help Center and Cha
 
 | | |
 |---|---|
-| **Role** | UX/UI Design: Help Center & Chat Support experience |
+| **Role** | Sr UX Designer: Help Center & Chat Support experience |
 | **Tool** | Figma |
 | **Platform** | IgniteRE web application (in-app help panel) |
 | **Users** | Real estate agents and property managers |
@@ -325,7 +325,7 @@ flowchart LR
 
 | Stage | What we did | What we learned / changed |
 |---|---|---|
-| **Usability testing (pre-launch)** | Ran **several rounds of usability testing with real users**, observing how they used both the Help Center and Chat Support | ✅ Users liked how **simple and efficient** the Help Center search was.<br/>🔧 We **adjusted the chatbot's flow** to handle more nuanced queries |
+| **Usability testing (pre-launch)** | Ran **several rounds of usability testing with real users**, observing how they used both the Help Center and Chat Support | ✅ Users liked how **simple and efficient** the Help Center search was.<br/>🔧 I **adjusted the chatbot's flow** to handle more nuanced queries |
 | **Feedback loops (post-launch)** | Kept collecting feedback through **in-app surveys** and **user behavior analytics** | 🔁 Made ongoing improvements to refine the experience and make sure users got the most value from the new features |
 
 ---
@@ -365,7 +365,7 @@ flowchart LR
 
 ## 📬 Contact
 
-**Ravi Myneni**, Senior UX Designer · 8+ years · Hyderabad, India
+**Ravi Myneni**, Sr UX Designer · 8+ years · Hyderabad, India
 
 [![Email](https://img.shields.io/badge/Email-ravimyneni2394%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ravimyneni2394@gmail.com)
 
