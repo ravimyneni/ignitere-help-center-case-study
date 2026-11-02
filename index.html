@@ -52,7 +52,7 @@ td b{color:var(--ink)}
 details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:0 20px}
 summary{cursor:pointer;font-weight:600;padding:16px 0}
 details[open]{padding-bottom:20px} details .figure + .figure{margin-top:20px}
-.metric-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.metric-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
 ol.take{list-style:none;counter-reset:t;display:grid;gap:12px;padding:0}
 ol.take li{counter-increment:t;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px 18px 60px;position:relative;max-width:none}
 ol.take li::before{content:counter(t,decimal-leading-zero);position:absolute;left:20px;top:18px;font:700 14px var(--font-head);color:var(--accent)}
@@ -61,6 +61,8 @@ ol.take li+li{margin-top:0}
 #lb{position:fixed;inset:0;background:rgba(16,18,24,.9);display:none;align-items:center;justify-content:center;z-index:100;padding:24px;cursor:zoom-out}
 #lb.on{display:flex} #lb img{max-height:92vh;border-radius:10px}
 @media (max-width:900px){.process{grid-template-columns:repeat(3,1fr)}.journey,.metric-grid{grid-template-columns:1fr 1fr}.hmw{grid-template-columns:1fr}}
+@media (min-width:901px) and (max-width:1100px){.metric-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:420px){.metric-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.process{grid-template-columns:1fr 1fr}.journey{grid-template-columns:1fr}.diagram{text-align:left}.diagram svg{max-width:none!important}}
 </style>
 </head>
