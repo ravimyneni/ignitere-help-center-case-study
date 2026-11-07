@@ -9,10 +9,10 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=rm1" sizes="180x180">
 <title>IgniteRE Help Center &amp; Chat Support — Case Study · Ravi Myneni</title>
 <meta name="author" content="Ravi Myneni">
-<meta name="description" content="UX case study by Ravi Myneni: designing an in-app Help Center and Chat Support for the IgniteRE real estate platform.">
+<meta name="description" content="UX case study by Ravi Myneni: designing an in-app Help Center and Chat Support for the IgniteRE real estate Web Application.">
 <link rel="canonical" href="https://ravimyneni.github.io/ignitere-help-center-case-study/">
 <meta property="og:title" content="IgniteRE Help Center &amp; Chat Support — UX Case Study">
-<meta property="og:description" content="UX case study by Ravi Myneni. Bringing support inside a real estate management platform: 50% faster response times, 30% self-resolution, +25% satisfaction.">
+<meta property="og:description" content="UX case study by Ravi Myneni. Bringing support inside a real estate management Web Application: 50% faster response times, 30% self-resolution, +25% satisfaction.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ravimyneni.github.io/ignitere-help-center-case-study/">
 <meta property="og:image" content="https://ravimyneni.github.io/ignitere-help-center-case-study/00-hero-banner.jpg">
@@ -28,10 +28,13 @@
 .card h3{margin-bottom:8px}
 .card ul{padding-left:18px;margin-top:10px} .card li{color:var(--muted);font-size:15px} .card li+li{margin-top:6px}
 .card p + p{margin-top:8px}
-.process{grid-template-columns:repeat(6,1fr)}
-.process a.step{color:var(--ink);display:block;transition:transform .2s,border-color .2s}
-.process a.step:hover{text-decoration:none;transform:translateY(-3px);border-color:var(--accent)}
+.process{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;width:100%;margin-left:0}
+.process .step{color:var(--ink);display:flex;flex-direction:column;align-items:flex-start;min-width:0;height:100%;cursor:default;text-decoration:none}
+.process .step:hover,.process .step:focus,.process .step:active{text-decoration:none;transform:none;border-color:var(--line);color:var(--ink);cursor:default;outline:none}
 .process .step i{font:700 13px var(--font-head);font-style:normal;color:var(--accent);display:block;margin-bottom:6px}
+.process .step b,.process .step i{text-align:start;-webkit-hyphens:manual;hyphens:manual}
+.cs-hero .lede,.cs-section .head p,.body p,.card p,.callout,figcaption,.hmw div,.body li,.card li,.process .step span{text-align:justify;text-justify:inter-word;-webkit-hyphens:auto;hyphens:auto;hyphenate-limit-chars:7 3 3;text-wrap:pretty;overflow-wrap:break-word}
+h1,h2,h3,h4,.cs-nav,.cs-nav a,.eyebrow,.tag,dt,dd,th,.metric .v,.metric .l,.metric .n,.hmw small,.jstep,.stage h4,summary,.site-foot,.site-foot p,.site-foot li,.site-foot span{text-align:start;-webkit-hyphens:manual;hyphens:manual}
 .table-scroll{overflow-x:auto} .table-scroll table{min-width:640px}
 td b{color:var(--ink)}
 .figure img{width:100%;height:auto;cursor:zoom-in;border:1px solid var(--line)}
@@ -53,17 +56,13 @@ details{border:1px solid var(--line);border-radius:var(--radius);background:var(
 summary{cursor:pointer;font-weight:600;padding:16px 0}
 details[open]{padding-bottom:20px} details .figure + .figure{margin-top:20px}
 .metric-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
-ol.take{list-style:none;counter-reset:t;display:grid;gap:12px;padding:0}
-ol.take li{counter-increment:t;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px 18px 60px;position:relative;max-width:none}
-ol.take li::before{content:counter(t,decimal-leading-zero);position:absolute;left:20px;top:18px;font:700 14px var(--font-head);color:var(--accent)}
-ol.take li+li{margin-top:0}
 .note{font-size:14px;color:var(--muted)}
 #lb{position:fixed;inset:0;background:rgba(16,18,24,.9);display:none;align-items:center;justify-content:center;z-index:100;padding:24px;cursor:zoom-out}
 #lb.on{display:flex} #lb img{max-height:92vh;border-radius:10px}
-@media (max-width:900px){.process{grid-template-columns:repeat(3,1fr)}.journey,.metric-grid{grid-template-columns:1fr 1fr}.hmw{grid-template-columns:1fr}}
+@media (max-width:900px){.process{grid-template-columns:repeat(2,minmax(0,1fr))}.journey,.metric-grid{grid-template-columns:1fr 1fr}.hmw{grid-template-columns:1fr}}
 @media (min-width:901px) and (max-width:1100px){.metric-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:420px){.metric-grid{grid-template-columns:1fr}}
-@media (max-width:560px){.process{grid-template-columns:1fr 1fr}.journey{grid-template-columns:1fr}.diagram{text-align:left}.diagram svg{max-width:none!important}}
+@media (max-width:560px){.process{grid-template-columns:minmax(0,1fr)}.journey{grid-template-columns:1fr}.diagram{text-align:left}.diagram svg{max-width:none!important}}
 </style>
 </head>
 <body id="top">
@@ -71,19 +70,19 @@ ol.take li+li{margin-top:0}
 <nav class="cs-nav"><div class="wrap">
   <a class="back" href="https://ravimyneni.github.io/">← All work</a>
   <div class="links">
-    <a href="#role">My Role</a><a href="#process">Design Process</a><a href="#problem">Problem</a><a href="#empathize">Empathize</a><a href="#define">Define</a><a href="#ideate">Ideate</a><a href="#design">Design</a><a href="#test">Test</a><a href="#results">Results</a><a href="#learnings">Learnings</a>
+    <a href="#role">My Role</a><a href="#process">Design Process</a><a href="#problem">Problem</a><a href="#empathize">Empathize</a><a href="#define">Define</a><a href="#ideate">Ideate</a><a href="#design">Design</a><a href="#test">Test</a><a href="#results">Results</a>
   </div>
 </div></nav>
 
 <header class="cs-hero"><div class="wrap">
   <div class="eyebrow">Case Study · First American · IgniteRE</div>
   <h1>IgniteRE Help Center &amp; Chat Support</h1>
-  <p class="lede">Bringing support inside a real estate management platform, so agents and property managers get help the moment they need it, without leaving their work.</p>
+  <p class="lede">Bringing support inside a real estate management Web Application, so agents and property managers get help the moment they need it, without leaving their work.</p>
   <dl class="meta">
     <div><dt>Role</dt><dd>Sr UX Designer</dd></div>
     <div><dt>Product</dt><dd>IgniteRE platform</dd></div>
     <div><dt>Designed</dt><dd>Help Center + Chat Support</dd></div>
-    <div><dt>Platform</dt><dd>Web app (in-app help panel)</dd></div>
+    <div><dt>Platform</dt><dd>Web Application</dd></div>
     <div><dt>Tools</dt><dd>Figma</dd></div>
   </dl>
   <figure class="cs-cover"><img src="00-hero-banner.jpg" width="2000" height="700" alt="IgniteRE Help Center: in-app help panel shown over the IgniteRE dashboard" fetchpriority="high"></figure>
@@ -93,8 +92,8 @@ ol.take li+li{margin-top:0}
 <section class="cs-section" id="role"><div class="wrap">
   <div class="head"><div class="num">01</div><div><h2>My Role</h2><p>I designed the Help Center and Chat Support experience for IgniteRE in Figma, from wireframes to high-fidelity screens.</p></div></div>
   <div class="body">
-    <p><b>IgniteRE</b> is a dynamic real estate management platform used by <b>real estate agents and property managers</b> to streamline their daily tasks. As the platform grew in complexity and features, users began to experience friction when they needed support. They often struggled to find timely assistance, which led to frustration and lower satisfaction.</p>
-    <p>To address these pain points, I designed a <b>Help Center and Chat Support directly inside the IgniteRE application</b>, improving the overall user experience.</p>
+    <p><b>IgniteRE</b> is a dynamic real estate management Web Application used by <b>real estate agents and property managers</b> to streamline their daily tasks. As the platform grew in complexity and features, users began to experience friction when they needed support. They often struggled to find timely assistance, which led to frustration and lower satisfaction.</p>
+    <p>To address these pain points, I designed a <b>Help Center and Chat Support directly inside the IgniteRE Web Application</b>, improving the overall user experience.</p>
     <figure class="figure"><img src="01-hero-mockup.jpg" width="2000" height="1409" loading="lazy" alt="Hi-fi mockup: the Help panel open beside the IgniteRE dashboard"><figcaption>The final Help panel opens beside the user's current page, so they never lose their place.</figcaption></figure>
   </div>
 </div></section>
@@ -102,12 +101,12 @@ ol.take li+li{margin-top:0}
 <section class="cs-section" id="process"><div class="wrap">
   <div class="head"><div class="num">02</div><div><h2>Design Process</h2><p>The UX process at a glance.</p></div></div>
   <div class="body"><div class="process">
-    <a class="step" href="#empathize"><i>01</i><b>Empathize</b><span>User pain points</span></a>
-    <a class="step" href="#define"><i>02</i><b>Define</b><span>Challenges → objectives</span></a>
-    <a class="step" href="#ideate"><i>03</i><b>Ideate</b><span>Concepts, IA, flows</span></a>
-    <a class="step" href="#design"><i>04</i><b>Design</b><span>Wireframes → hi-fi in Figma</span></a>
-    <a class="step" href="#test"><i>05</i><b>Test &amp; Iterate</b><span>Usability rounds, feedback loops</span></a>
-    <a class="step" href="#results"><i>06</i><b>Measure</b><span>Results &amp; impact</span></a>
+    <div class="step"><i>01</i><b>Empathize</b><span>I set down the product context for agents and property managers and the support gaps already described: help lived outside the app, tickets were slow, the same feature questions returned, and new features added friction.</span></div>
+    <div class="step"><i>02</i><b>Define</b><span>I paired each challenge with an objective and a design response: in-app access, faster resolution, self-service for repeat questions, and a native panel. Three How Might We questions held the priorities.</span></div>
+    <div class="step"><i>03</i><b>Ideate</b><span>I shaped Help Center and Chat Support concepts, grouped articles by product areas users already know, and mapped a path from search or chat to an article, a live agent, or Leave a Message.</span></div>
+    <div class="step"><i>04</i><b>Design</b><span>I wireframed each help state in Figma, from search and articles to the four support routes and a docked or undocked panel, then refined hi-fi screens to IgniteRE's existing layout and branding.</span></div>
+    <div class="step"><i>05</i><b>Test &amp; Iterate</b><span>Usability rounds with real users showed Help Center search was simple and efficient, so I adjusted the chatbot flow for more nuanced queries. After launch, in-app surveys and behavior analytics guided further changes.</span></div>
+    <div class="step"><i>06</i><b>Measure</b><span>Documented results were 50% faster responses, 30% of users resolving issues on their own, 40% feeling more empowered, 20% more engagement, and 25% higher satisfaction.</span></div>
   </div></div>
 </div></section>
 
@@ -319,19 +318,6 @@ flowchart TB
   </div>
 </div></section>
 
-<section class="cs-section" id="learnings"><div class="wrap">
-  <div class="head"><div class="num">10</div><div><h2>Learnings &amp; Conclusion</h2><p>What this project taught me.</p></div></div>
-  <div class="body">
-    <p>Integrating the Help Center and Chat Support significantly improved the experience for IgniteRE users. Quick access to helpful resources and real-time support reduced frustration, improved task completion times and increased user satisfaction.</p>
-    <ol class="take">
-      <li><b>In-context support matters.</b> Putting help inside the workflow, with a consistent entry point and no page change, removed the biggest barrier: getting to help at all.</li>
-      <li><b>Self-service and human support work together.</b> Good search, clear categories and visual guides take care of repetitive questions, so live agents can focus on what really needs a person.</li>
-      <li><b>Handoffs should carry context.</b> Passing prior interactions and issue details to the live agent means users never have to repeat themselves.</li>
-      <li><b>Launch is the start of iteration.</b> Usability testing shaped the chatbot flow, and in-app surveys plus analytics keep improving the experience after release.</li>
-      <li><b>Good support UX helps the business too.</b> The project improved the customer experience and also made support operations more efficient for the IgniteRE team.</li>
-    </ol>
-  </div>
-</div></section>
 </main>
 
 <footer class="site-foot">

@@ -3,7 +3,7 @@
 <img src="00-hero-banner.jpg" alt="IgniteRE Help Center: in-app help panel shown over the IgniteRE dashboard" width="100%"/>
 
 # IgniteRE Help Center & Chat Support
-### A UX case study: bringing support *inside* a real estate management platform
+### A UX case study: bringing support *inside* a real estate management Web Application
 
 ![Role](https://img.shields.io/badge/Role-Sr%20UX%20Designer-6C47FF?style=flat-square)
 ![Tool](https://img.shields.io/badge/Tool-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
@@ -24,7 +24,7 @@
 
 | | |
 |---|---|
-| **Product** | IgniteRE, a real estate management platform for agents and property managers |
+| **Product** | IgniteRE, a real estate management Web Application for agents and property managers |
 | **What I designed** | An in-app **Help Center** (searchable knowledge base) + **Chat Support** (chatbot with live-agent handoff) |
 | **Tool** | Figma |
 | **Process** | Empathize → Define → Ideate → Design → Test & Iterate → Measure |
@@ -44,16 +44,15 @@
   - [High-fidelity mockups](#high-fidelity-mockups)
 - [5. Test & Iterate](#5--test--iterate)
 - [6. Results & Impact](#6--results--impact)
-- [Learnings & Conclusion](#-learnings--conclusion)
 - [Contact](#-contact)
 
 ---
 
 ## 🔎 Overview
 
-**IgniteRE** is a dynamic real estate management platform used by **real estate agents and property managers** to streamline their daily tasks. As the platform grew in complexity and features, users began to experience friction when they needed support. They often struggled to find timely assistance, which led to frustration and lower satisfaction.
+**IgniteRE** is a dynamic real estate management Web Application used by **real estate agents and property managers** to streamline their daily tasks. As the platform grew in complexity and features, users began to experience friction when they needed support. They often struggled to find timely assistance, which led to frustration and lower satisfaction.
 
-To address these pain points, I designed a **Help Center and Chat Support directly inside the IgniteRE application**, improving the overall user experience.
+To address these pain points, I designed a **Help Center and Chat Support directly inside the IgniteRE Web Application**, improving the overall user experience.
 
 <p align="center">
   <img src="01-hero-mockup.jpg" alt="Hi-fi mockup: the Help panel open beside the IgniteRE dashboard, with search, suggested articles and four support entry points" width="90%"/>
@@ -64,7 +63,7 @@ To address these pain points, I designed a **Help Center and Chat Support direct
 |---|---|
 | **Role** | Sr UX Designer: Help Center & Chat Support experience |
 | **Tool** | Figma |
-| **Platform** | IgniteRE web application (in-app help panel) |
+| **Platform** | Web Application |
 | **Users** | Real estate agents and property managers |
 
 > **Problem statement:** IgniteRE users had no fast, in-context way to get help. Support lived outside the app, tickets were slow, and the same questions kept coming back, so users got frustrated and the support team got overloaded.
@@ -346,20 +345,6 @@ flowchart LR
 - **Less frustration:** users reported feeling more confident in the app, with **40%** saying they now feel **more empowered to solve problems on their own**.
 - **Better engagement:** always-available support led to a **20% increase in user engagement**, with users spending more time in the app knowing help was a click away.
 - **Positive feedback:** **user satisfaction scores rose 25%**, especially for the clarity and usefulness of Help Center articles and the responsiveness of live chat.
-
----
-
-## 🧠 Learnings & Conclusion
-
-**Conclusion.** Integrating the Help Center and Chat Support significantly improved the experience for IgniteRE users. Quick access to helpful resources and real-time support reduced frustration, improved task completion times and increased user satisfaction.
-
-**Key takeaways**
-
-1. **In-context support matters.** Putting help *inside* the workflow, with a consistent entry point and no page change, removed the biggest barrier: getting to help at all.
-2. **Self-service and human support work together.** Good search, clear categories and visual guides take care of repetitive questions, so live agents can focus on what really needs a person.
-3. **Handoffs should carry context.** Passing prior interactions and issue details to the live agent means users never have to repeat themselves.
-4. **Launch is the start of iteration.** Usability testing shaped the chatbot flow, and in-app surveys plus analytics keep improving the experience after release.
-5. **Good support UX helps the business too.** The project improved the customer experience and also made support operations more efficient for the IgniteRE team.
 
 ---
 
